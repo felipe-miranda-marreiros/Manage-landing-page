@@ -254,6 +254,31 @@ p[data-width="wide"] {
   }
 }
 
+/************ CTA ************/
+
+.cta {
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+  background-image: url("/images/bg-simplify-section-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+@media (min-width: 50em) {
+  .cta {
+    text-align: left;
+  }
+}
+
+@media (max-width: 50em) {
+  .cta {
+    text-align: left;
+    background-image: url("/images/bg-simplify-section-mobile.svg");
+    background-position: left;
+  }
+}
+
 /************ Utility Classes ************/
 
 .visually-hidden {
@@ -277,10 +302,6 @@ p[data-width="wide"] {
   margin-inline: auto;
 }
 
-:where(.flow :not(:first-child)) {
-  margin-top: var(--flow-spacer, 4em);
-}
-
 .even-columns {
   display: grid;
   gap: 1rem;
@@ -291,6 +312,28 @@ p[data-width="wide"] {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+}
+
+.vertical-align-center {
+  align-items: center;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.justify-self-end-md {
+  justify-self: center;
+}
+
+@media (min-width: 50em) {
+  .justify-self-md {
+    justify-self: center;
+  }
+}
+
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 4em);
 }
 
 .text-primary-400 {
