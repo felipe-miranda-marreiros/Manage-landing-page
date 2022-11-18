@@ -6,7 +6,20 @@
 
 # Manage Landing Page
 
-Landing page produzida com HTML, CSS e JavaScript usando acessibilidade e tags semânticas. Para o slide, foi utilizado a biblioteca A11Y Slider. 
+Landing page produzida com HTML, CSS e JavaScript usando acessibilidade e tags semânticas. Para o slide, foi utilizado a biblioteca A11Y Slider.
+
+## Guia
+
+```
+git clone https://github.com/felipe-miranda-marreiros/Manage-landing-page.git
+```
+
+```
+npm run install
+npm run dev
+```
+
+Ou simplesmente use Live Server.
 
 ## Estrutura
 
